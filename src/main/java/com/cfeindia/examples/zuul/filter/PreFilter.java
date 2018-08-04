@@ -5,18 +5,13 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
-import org.springframework.web.util.UrlPathHelper;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.http.HttpServletRequestWrapper;
 
 @Component
 public class PreFilter extends ZuulFilter {
 	private static Logger log = LoggerFactory.getLogger(PreFilter.class);
-
-	private UrlPathHelper urlPathHelper = new UrlPathHelper();
 
 	@Override
 	public String filterType() {

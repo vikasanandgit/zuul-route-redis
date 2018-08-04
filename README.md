@@ -6,5 +6,5 @@ It is fault tolerant and restarting the zuul server restores the previous routes
 
 Other database or cache can be used instead of redis but to explain the process redis is sufficient.
 
-This example includes saving and retriving data using Redis. This example also demonstrates how to load data at server startup in Spring boot/Spring MVC. 
+This example includes saving and retrieving data using Redis. This example also demonstrates how to load data at server startup in Spring boot/Spring MVC. 
 
